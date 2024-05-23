@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Display Employee datas using Update / Update_or_create method</h1>
+        <table border="5px" height="500px" width="1000px">
+            <tr>
+                <th>Emp No</th>
+                <th>Emp Name</th>
+                <th>Job</th>
+                <th>Hiredate</th>
+                <th>Salary</th>
+                <th>Comm</th>
+                <th>Dept No</th>
+            </tr>
+            {% for EO in EMO %}
+            <tr>
+                <td>{{EO.ename}}</td>
+                <td>{{EO.emp_no}}</td>
+                <td>{{EO.job}}</td>
+                <td>{{EO.hiredate}}</td>
+                <td>{{EO.sal}}</td>
+                <td>{{EO.comm}}</td>
+                <td>{{EO.dept_no}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>

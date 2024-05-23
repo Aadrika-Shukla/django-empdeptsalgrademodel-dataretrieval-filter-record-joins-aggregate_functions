@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>emp_mgr_dept</h1>
+        <table border="5px">
+            <tr>
+                <th>Employee Name</th>
+                <th>Manager Name</th>
+                <th>Department Name</th>
+                <th>Salary</th>
+            </tr>
+            {% for emdo in EMDJD %}
+            <tr>
+                <td>{{emdo.ename}}</td>
+                <td>{{emdo.mgr.ename}}</td>
+                <td>{{emdo.dept_no.dname}}</td>
+                <td>{{emdo.sal}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
